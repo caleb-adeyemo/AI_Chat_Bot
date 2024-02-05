@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>TrainAI - Chatbot</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="js/chatbot-messages.js" defer></script>
+  </head>
+  <body>
+    <div class="container">
+        <div class="logo">
+          <a href="/"> TrainAI </a>
+        </div>
+      <header>
+        <nav>
+          <ul>
+            <li><a  href="/">HOME</a></li>
+            <li><a class="active" href="/chatbot">CHATBOT</a></li>
+            <li><a href="/about">ABOUT</a></li>
+          </ul>
+        </nav>
+      </header>
+    </div>
+    <main>
+      <div id="chatbox">
+        <div id="chat-title">
+          Chatbot
+        </div>
+        <div id="chat-container">
+          <!-- Chat history will be added here -->
+            <!-- <div class="chat-item bot">
+              Hi! I am TrainAI. How can I help you today?
+            </div>
+            <div class="chat-item user">
+              Hi TrainAI! I would like to book a train ticket.
+            </div>
+            <div class="chat-item bot">
+              Certainly! Could you please provide details of you travel?
+            </div> -->
+        </div>
+        <div id="input-container">
+          <input type="text" id="user-input" placeholder="Type your message here...">
+          <button id="send-button">Send</button>
+      </div>
+    </div>
+    </main>
+
+  </body>
+</html>
